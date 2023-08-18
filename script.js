@@ -15,13 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data === "Success") {
           alert("Data berhasil disimpan!");
           form.reset();
-        } else {
-          alert("Terjadi kesalahan saat menyimpan data.");
         }
       })
       .catch((error) => {
         console.error("Error:", error);
-        alert("Terjadi kesalahan saat menyimpan data.");
       });
   });
 });
